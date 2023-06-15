@@ -178,7 +178,29 @@
 
     <input type="image" src="metaworld_360.jpg"><br>
     <label>Select a file:</label>
-    <input type="file">
+    <input type="file"><br>
+
+    <label>Miktar(1-5)</label>
+    <input type="number" min="1" max="5">
+    <label>Miktar ölçümü</label>
+    <input type="number" min="0" max="100" step="10" value="30">
+    <!-- ilk değer 30 oluyor)-->
+    <label>Yoğunluk</label>
+    <input type="range" min="0" max="100" value="50">
+
+    <!-- HTML Media-->
+    <video width="320" height="240" controls>
+        <source src="./metallica.mp4" type="video/mp4"/>
+    </video>
+
+    <audio controls>
+        <source src="metallica.mp3" type="audio/mp3"/>
+    </audio>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+    </iframe>
+
 
     
 </form>
