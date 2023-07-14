@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Ders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        div.first span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            border-width: 3px;
+            background-color: rgb(250, 220, 220);
+        }
+
+        div.second span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            border-width: 3px;
+            background-color: black;
+        }
+
+
+        div.second {
+            background-color: orange;
+        }
+    </style>
+
+    <!-- bs modals -->
+
+    <span>
+        <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#myModal">
+            Kişisel Bilgiler
+        </button>
+    </span>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Ahmet Arı
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Yaş:20 Boy:1.70
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Open
+            modal</button>
+    </span>
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h3>Some text to enable scrolling...</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus odio omnis beatae dolores
+                        numquam commodi quos? Ducimus, dignissimos! Dicta blanditiis delectus velit, natus iusto ab at
+                        nisi rerum fugit voluptate officiis vitae quam quidem dolorum exercitationem reiciendis ratione
+                        veniam. Fuga, officia. Ipsa aliquam nam, commodi labore quia eum? Architecto aperiam odio dicta
+                        vero cum quaerat doloremque, eaque error possimus repellendus voluptate iure nisi quibusdam
+                        libero illo provident aut, harum non asperiores accusamus aliquam deleniti. Mollitia natus,
+                        dignissimos atque voluptatem ex minima dolore esse incidunt aspernatur eius laboriosam
+                        consequatur sequi animi vel? Similique tempore ut perspiciatis provident eum, labore enim
+                        aliquam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minus ipsum cum ipsa fugit
+                        quibusdam, aliquam accusantium dolorem possimus repudiandae modi architecto, quisquam non natus
+                        delectus voluptate quia illo aut eveniet officia eius. Odio nostrum et, voluptatibus culpa
+                        voluptate consectetur saepe tempora vel, quos aspernatur est maiores, molestiae enim eaque
+                        nesciunt dicta ipsum ratione ipsam corrupti quod ex. Expedita consectetur deleniti iusto
+                        debitis, esse perspiciatis eius veniam quam! Praesentium iusto pariatur laboriosam minima ullam,
+                        facilis animi debitis! Aut deserunt officia vero impedit iusto quaerat libero ad omnis voluptas
+                        delectus quos voluptates, debitis voluptatum quo veniam minima, repellendus necessitatibus quas
+                        sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta odit ea, tempore, magnam
+                        magni consequuntur dolor aliquam quod iusto ratione officiis distinctio eius accusantium eveniet
+                        qui adipisci provident reiciendis modi, quasi labore et. Ullam porro dicta ea vel, dolor quae
+                        aliquid, quod fugiat necessitatibus voluptates dignissimos doloremque eum delectus!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bs tooltip -->
+
+    <div class="container mt-3">
+        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Bu bir tooltip">Top</a>
+    </div>
+
+
+
+    <!-- bs popover -->
+
+    <div class="container mt-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Burası Başlıktır"
+            data-bs-trigger="focus" data-bs-content="Burası içerik bölümü...">Bilgi için tıklayınız...</button>
+    </div>
+
+    <!-- bs toast -->
+
+    <div class="container mt-3">
+        <div class="toast show">
+            <div class="toast-header">
+                <strong class="me-auto">Toast Header</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Some text inside the toast body</p>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h3>Toast example</h3>
+            <button type="button" class="btn btn-primary" id="liveToastBtn">Show Toast</button>
+
+            <div id="liveToast" class="toast">
+                <div class="toast-header">
+                    <strong class="me-auto">Toast Başlığı</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    <div class="toast-body">
+                        <p>Burası toast body olup uyarı için kullanılacak yaklaşık 5 saniye sonra sönecektir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bs offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Offcanvas Sidebar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#demo"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">Menu 1 </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Menu 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-3">
+        <h3>Offcanvas Sidebar</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            Open Offcanvas Sidebar Menu
+        </button>
+    </div>
+
+    <!-- bs utility -->
+
+    <div class="first container mt-3">
+        <h2>borders</h2>
+        <span class="border border-primary"></span>
+        <span class="border border-danger border-5 border-top-0"></span>
+        <span class="border border-danger border-5 border-start-0"></span>
+        <span class="border-top border-bottom border-danger border-3"></span>
+
+    </div>
+
+    <div class="second container mt-3">
+        <h2>borders yuvarlamalar</h2>
+        <span class="rounded"></span>
+        <span class="rounded-top"></span>
+        <span class="rounded-circle"></span>
+        <span class="rounded-pill" style="width: 130px;"></span>
+        <span class="rounded-2"></span>
+    </div>
+
+    <div class="container mt-3">
+        <h2>float with clearfix</h2>
+        <div class="clearfix">
+            <span class="float-start">Float Left</span>
+            <span class="float-end">Float Right</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="container mt-3">
+        <div class="clearfix">
+            <div class="float-sm-end">small veya daha büyükse kayacaktır</div><br>
+            <div class="float-md-end">medium veya daha büyükse kayacaktır</div><br>
+            <div class="float-lg-end">large veya daha büyükse kayacaktır</div><br>
+            <div class="float-none">kayma yapmayacak</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="pt-4 bg-warning">Top padding</div>
+        <div class="p-5 bg-success">All sides padding</div>
+        <div class="m-sm-5 pb-5 bg-info">all sides margin</div>
+    </div>
+
+    <!-- bs flex -->
+
+    <div class="d-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div><br>
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-column p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="d-flex justify-content-center p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="d-flex">
+        <div class="p-2 bg-info flex-fill">Flex item 1</div>
+        <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <div class="d-flex">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+    </div>
+
+    
+
+    <div class="d-flex bg-secondary">
+        <div class="p-2 bg-info order-3">Flex item 1</div>
+        <div class="p-2 bg-warning order-2">Flex item 2</div>
+        <div class="p-2 bg-primary order-1">Flex item 3</div>
+    </div>
+
+    <div class="d-flex bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning m-auto">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="d-flex flex-wrap align-content-center bg-primary" style="height: 300px;">
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+        <div class="p-2 border">Flex Item</div>
+    </div>
+
+
+    <div class="container mt-3">
+        <div class="d-flex align-items-center bg-primary" style="height: 300px;">
+            <div class="p-2 border">Flex Item</div>
+            <div class="p-2 border">Flex Item</div>
+            <div class="p-2 border">Flex Item</div></div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="d-flex bg-primary" style="height: 300px;">
+            <div class="p-2 border align-self-center">Flex Item</div>
+            <div class="p-2 border align-self-start">Flex Item</div>
+            <div class="p-2 border">Flex Item</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <span class="d-flex bg-primary">d-flex</span>
+        <span class="d-sm-flex bg-primary ">d-sm-flex</span>
+        <span class="d-md-flex bg-primary">d-md-flex</span>
+        <span class="d-lg-flex bg-primary">d-lg-flex</span>
+    </div>
+
+
+    <!-- bs forms -->
+
+    <div class="container mt-3">
+        <form>
+            <label class="form-label">Select List:</label>
+            <select class="form-select form-select-sm w-25">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="container mt-3">
+        <form>
+            <label class="form-label">İsminizi Giriniz</label>
+            <input class="form-control">
+        </form>
+    </div>
+
+    <div class="container mt-3">
+       <form>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" checked>
+              <label class="form-check-label" for="check1">option 2</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" checked>
+              <label class="form-check-label" for="check2">option 1</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" checked>
+              <label class="form-check-label" for="check3">option 3</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+       </form>
+    </div>
+
+
+    <div class="container mt-3">
+        <form>
+         <div class="form-check">
+             <input type="radio" class="form-check-input" id="check1" name="radios" checked>
+               <label class="form-check-label" for="check1">option 2</label>
+         </div>
+         <div class="form-check">
+             <input type="radio" class="form-check-input" id="check2" name="radios" checked>
+               <label class="form-check-label" for="check2">option 1</label>
+         </div>
+         <div class="form-check">
+             <input type="radio" class="form-check-input" id="check3" name="radios"checked>
+               <label class="form-check-label" for="check3">option 3</label>
+         </div>
+         <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+     </div>
+
+
+     <div class="container mt-3">
+        <form>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="mySwitch" checked>
+                <label class="form-check-label" for="mySwitch">Dark Mode</label>
+            </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+     </div>
+
+     <div class="container mt-3 bg-danger">
+        <form>
+            <label class="form-label">Custom range</label>
+            <input type="range" class="form-range" step="10">
+        </form>
+     </div>
+
+     <div class="container mt-3">
+        <form>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="Enter Email">
+                <label>Email</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="Enter Password">
+                <label>Password</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="Enter Comment">
+                <label>Comments</label>
+            </div>
+        </form>
+     </div>
+
+
+     <div class="container mt-3">
+        <form>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label class="form-label">Select list:</label>
+            </div>
+        </form>
+     </div>
+
+
+
+
+    <div style="height: 500px;"></div>
+
+
+
+
+
+
+    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
+</body>
+
+</html>
