@@ -1,5 +1,8 @@
 
 import JSX from "./1-JSX/JSX"
+import UseContext from "./10-UseContextHook/UseContext";
+import CSSSStyling from "./11-CSSStyling/CSSSStyling";
+import ReduxToolkit from "./12-Redux-toolkit/ReduxToolkit";
 import Props from "./2-Props/Props"
 import Events from "./3-Events/Events"
 import Conditionals from "./4-Conditionals/Conditionals";
@@ -20,7 +23,10 @@ function App() {
       {/* <UseStateHook/> */}
       {/* <UseEffectHook/> */}
       {/* <Forms/> */}
-      <Router/>
+      {/* <Router/> */}
+      {/* <UseContext/> */}
+      {/* <CSSSStyling/> */}
+      <ReduxToolkit/>
 
     </div>
   );
